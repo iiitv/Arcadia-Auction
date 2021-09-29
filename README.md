@@ -2,7 +2,7 @@
 
 An App where all the details about a tournament can be found.
 
-## ⚡Features
+## Features
 
 - User Side
 
@@ -21,52 +21,49 @@ An App where all the details about a tournament can be found.
   - Admin can add match schedule on the App which will be displayed to the users.
   - Admin can announce any updates throught the App itself.
 
-<br>
-<br>
 
-## ⚡Screenshots
+<!-- GETTING STARTED -->
+## Getting Started
 
-<br>
-<p align="center">
-    <img src="screenshots/onboarding1.jpg" width="30%"></img>
-    <img src="screenshots/onboarding3.jpg" width="30%"></img>
-    <img src="screenshots/onboarding2.jpg" width="30%"></img> 
-    <br>
-    <img src="screenshots/playerhome.jpg" width="30%"></img> 
-    <img src="screenshots/announcementdialog.jpeg" width="30%"></img>
-    <img src="screenshots/playerprofile.jpg" width="30%"></img>
-    <br> 
-    <!-- <img src="screenshots/matchdetails.jpg" width="30%"> 
-    </img><img src="screenshots/onboarding-1.jpg" width="30%">
-    <img src="screenshots/a" width="30%"></img>  
-    <br> -->
-    <img src="screenshots/teamschedule.jpg" width="30%"></img>
-    <img src="screenshots/teamstandings.jpg" width="30%"></img>
-    <img src="screenshots/teamdetails2.jpeg" width="30%"></img>
-    <!-- <img src="screenshots/addteam1.jpg" width="30%"></img> -->
-    <br>
-    <img src="screenshots/login.jpg" width="30%"></img>
-    <img src="screenshots/matchdetails.jpg" width="30%"></img>
-    <img src="screenshots/rules.jpg" width="30%"></img>
-    <br>
-    <img src="screenshots/addannouncement.jpg" width="30%"></img> 
-    <img src="screenshots/addmatch.jpg" width="30%"></img>
-    <img src="screenshots/admindashboard.jpg" width="30%"></img>
-    <br>
-    <!-- <img src="screenshots/auctionstatus.jpg" width="30%"></img> -->
-</p>
+Start working on this Project and getting started with Prerequisties.have a overview of this app on [wiki](https://github.com/iiitv/Arcadia-Auction/wiki)
 
-<br>
+### Prerequisites
 
-## 💻Tech Stack
+you should have Flutter SDK installed in your environment.
+* flutter
+  ```sh
+  git clone https://github.com/flutter/flutter.git -b stable
+  ```
+
+### Installation
+
+1. Fork this repo
+2. Clone the repo
+   ```sh
+   git clone https://github.com/iiitv/Arcadia-Auction
+   ```
+3. Install pubspec Dependencies
+   ```sh
+   flutter pub get
+   ```
+4. Create your Feature Branch 
+   ```sh
+   git branch (Feature name)
+   ```
+5. Start working on issue/feature
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Read guidelines and getting started [here](https://github.com/iiitv/Arcadia-Auction/blob/main/CONTRIBUTION.md). Start working on the [issue](https://github.com/iiitv/Arcadia-Auction/issues).
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Tech Stack
 
 - Flutter
 - Firebase
-
-<br>
-
-## 🤓 Contributors
-
-- [Ashish Kumar Singh](https://github.com/AshishSingh2001)
-- [Kapil Kumar](https://github.com/kapilkumar2001)
-- [Nishant Andoriya](https://github.com/M-A-D-A-R-A)
+- Provider
