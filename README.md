@@ -40,7 +40,7 @@ you should have Flutter SDK installed in your environment.
 1. Fork this repo
 2. Clone the repo
    ```sh
-   git clone https://github.com/iiitv/Arcadia-Auction
+   git clone https://github.com/<your-username>/Arcadia-Auction
    ```
 3. Install pubspec Dependencies
    ```sh
