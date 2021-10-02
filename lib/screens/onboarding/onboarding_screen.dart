@@ -61,9 +61,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Container(
+                    padding: EdgeInsets.only(right: 8),
                     alignment: Alignment.centerRight,
                     child: _currentPage != 2
-                        ? FlatButton(
+                        ? TextButton(
                             onPressed: () => Navigator.of(context)
                                 .pushReplacementNamed(SignInScreen.routeName),
                             child: Text(
@@ -74,7 +75,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ),
                           )
-                        : FlatButton(
+                        : TextButton(
                             onPressed: () => Navigator.of(context)
                                 .pushReplacementNamed(SignInScreen.routeName),
                             child: Text(
@@ -217,31 +218,36 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ? Expanded(
                         child: Align(
                           alignment: FractionalOffset.bottomRight,
-                          child: FlatButton(
+                          child: TextButton(
                             onPressed: () {
                               _pageController.nextPage(
                                 duration: Duration(milliseconds: 500),
                                 curve: Curves.ease,
                               );
                             },
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              mainAxisSize: MainAxisSize.min,
-                              children: <Widget>[
-                                Text(
-                                  'Next',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 22.0,
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 8.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  Container(
+                                    child: Text(
+                                      'Next',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 22.0,
+                                      ),
+                                    ),
                                   ),
-                                ),
-                                SizedBox(width: 10.0),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.white,
-                                  size: 30.0,
-                                ),
-                              ],
+                                  SizedBox(width: 10.0),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                    size: 30.0,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -249,10 +255,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     : Expanded(
                         child: Align(
                           alignment: FractionalOffset.bottomRight,
-                          child: FlatButton(
-                              onPressed:
-                              () => Navigator.of(context)
-                                  .pushReplacementNamed(SignInScreen.routeName),
+                          child: TextButton(
+                            onPressed: () => Navigator.of(context)
+                                .pushReplacementNamed(SignInScreen.routeName),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               mainAxisSize: MainAxisSize.min,
