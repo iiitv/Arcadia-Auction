@@ -52,6 +52,13 @@ you should have Flutter SDK installed in your environment.
    ```
 5. Start working on issue/feature
 
+### Note
+ - If you are not able to debug your app, that's maybe because you need to configure SHA1 in Firebase, just copy the code below and paste it in your terminal (if asked password use "android") and set it up on firebase.[Admin access](https://github.com/iiitv/Arcadia-Auction/issues/9).
+ ```sh
+  keytool -list -v -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.keystore
+   ```
+ 
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
