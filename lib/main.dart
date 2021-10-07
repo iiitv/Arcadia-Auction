@@ -64,6 +64,7 @@ class MyApp extends StatelessWidget {
               ),
             ],
             child: MaterialApp(
+              
               debugShowCheckedModeBanner: false,
               title: 'CSGO League',
               theme: ThemeData(
@@ -73,7 +74,8 @@ class MyApp extends StatelessWidget {
                 textTheme:
                     GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
               ),
-              home: getHome(snapshot.data),
+              // home: getHome(snapshot.data),
+              home: PlayerForm(),
               routes: {
                 AdminMainPage.routeName: (ctx) => AdminMainPage(),
                 AuctionHome.routeName: (ctx) => AuctionHome(),
