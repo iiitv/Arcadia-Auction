@@ -115,7 +115,7 @@ class _PlayerFormState extends State<PlayerForm> {
         child: Container(
           padding: EdgeInsets.only(top: 24),
           alignment: Alignment.topCenter,
-          color: CustomColors.firebaseNavy,
+          color: CustomColors.primaryColor,
           child: Column(
             children: [
               Container(
