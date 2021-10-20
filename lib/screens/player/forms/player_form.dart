@@ -184,7 +184,7 @@ class _PlayerFormState extends State<PlayerForm> {
                           hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
                           fillColor: CustomColors.taskez1,
-                          floatingLabelStyle: TextStyle(color: Colors.yellow),
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
@@ -228,7 +228,7 @@ class _PlayerFormState extends State<PlayerForm> {
                               TextStyle(color: Colors.white54, fontSize: 16),
                           filled: true,
                           fillColor: CustomColors.taskez1,
-                          floatingLabelStyle: TextStyle(color: Colors.yellow),
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
@@ -270,7 +270,7 @@ class _PlayerFormState extends State<PlayerForm> {
                           hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
                           fillColor: CustomColors.taskez1,
-                          floatingLabelStyle: TextStyle(color: Colors.yellow),
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
@@ -314,7 +314,7 @@ class _PlayerFormState extends State<PlayerForm> {
                           hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
                           fillColor: CustomColors.taskez1,
-                          floatingLabelStyle: TextStyle(color: Colors.yellow),
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
@@ -444,7 +444,7 @@ class _PlayerFormState extends State<PlayerForm> {
                           hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
                           fillColor: CustomColors.taskez1,
-                          floatingLabelStyle: TextStyle(color: Colors.yellow),
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,

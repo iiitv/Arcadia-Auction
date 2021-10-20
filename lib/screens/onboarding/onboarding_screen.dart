@@ -87,7 +87,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             ),
                           )),
                 Container(
-                  height: 600.0,
+                  height: 480.0,
                   // width: MediaQuery.of(context).size.width,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
@@ -106,7 +106,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             children: [
                               Center(
                                 child: Container(
-                                  height: 600.0,
+                                  height: 480.0,
                                   width: MediaQuery.of(context).size.width,
                                   child: FittedBox(
                                     fit: BoxFit.cover,
@@ -117,6 +117,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   ),
                                 ),
                               ),
+                                Image.asset(
+                            'assets/onboarding.png',
+                            height: 480.0,
+                            width: MediaQuery.of(context).size.width,
+                          ),
                               Positioned(
                                 top: 3,
                                 left: 90,
@@ -130,12 +135,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ],
                           ),
-
-                          // SizedBox(height: 15.0),
-                          // Text(
-                          //   'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.',
-                          //   style: kSubtitleStyle,
-                          // ),
                         ],
                       ),
                       Stack(
@@ -153,11 +152,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ),
                           ),
-                          // Image.asset(
-                          //   'assets/onboarding1.png',
-                          //   height: 600.0,
-                          //   width: MediaQuery.of(context).size.width,
-                          // ),
+                          Image.asset(
+                            'assets/onboarding1.png',
+                            height: 600.0,
+                            width: MediaQuery.of(context).size.width,
+                          ),
                           Positioned(
                             top: 3,
                             left: 70,
