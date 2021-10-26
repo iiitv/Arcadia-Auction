@@ -56,7 +56,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
           ),
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 40.0),
+            padding: EdgeInsets.symmetric(vertical: 22.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
@@ -87,7 +87,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             ),
                           )),
                 Container(
-                  height: 480.0,
+                  height: MediaQuery.of(context).orientation == Orientation.landscape? MediaQuery.of(context).size.height*0.60:MediaQuery.of(context).size.height*0.75,
                   // width: MediaQuery.of(context).size.width,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
@@ -106,7 +106,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             children: [
                               Center(
                                 child: Container(
-                                  height: 480.0,
+                                  height:MediaQuery.of(context).orientation == Orientation.landscape? MediaQuery.of(context).size.height*0.60:MediaQuery.of(context).size.height*0.75,
                                   width: MediaQuery.of(context).size.width,
                                   child: FittedBox(
                                     fit: BoxFit.cover,
@@ -119,12 +119,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                                 Image.asset(
                             'assets/onboarding.png',
-                            height: 480.0,
+                            height: MediaQuery.of(context).orientation == Orientation.landscape? MediaQuery.of(context).size.height*0.60:MediaQuery.of(context).size.height*0.75,
                             width: MediaQuery.of(context).size.width,
                           ),
                               Positioned(
                                 top: 3,
-                                left: 90,
+                                left: 40,
                                 child: Center(
                                   child: Text(
                                     'Make Your Profile',
@@ -206,9 +206,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+              SizedBox(
+                height: 20,
+              ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: _buildPageIndicator(),
