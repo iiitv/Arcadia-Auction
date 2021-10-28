@@ -87,7 +87,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             ),
                           )),
                 Container(
-                  height: MediaQuery.of(context).orientation == Orientation.landscape? MediaQuery.of(context).size.height*0.60:MediaQuery.of(context).size.height*0.75,
+                  height:MediaQuery.of(context).size.height*0.75,
                   // width: MediaQuery.of(context).size.width,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
@@ -106,8 +106,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             children: [
                               Center(
                                 child: Container(
-                                  height:MediaQuery.of(context).orientation == Orientation.landscape? MediaQuery.of(context).size.height*0.60:MediaQuery.of(context).size.height*0.75,
-                                  width: MediaQuery.of(context).size.width,
+                                  height:MediaQuery.of(context).size.height*0.75,
+                                  width: MediaQuery.of(context).size.width*0.8,
                                   child: FittedBox(
                                     fit: BoxFit.cover,
                                     clipBehavior: Clip.hardEdge,
@@ -117,11 +117,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   ),
                                 ),
                               ),
-                                Image.asset(
-                            'assets/onboarding.png',
-                            height: MediaQuery.of(context).orientation == Orientation.landscape? MediaQuery.of(context).size.height*0.60:MediaQuery.of(context).size.height*0.75,
-                            width: MediaQuery.of(context).size.width,
-                          ),
                               Positioned(
                                 top: 3,
                                 left: 40,
@@ -142,7 +137,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           Center(
                             child: Container(
                               height: 600.0,
-                              width: MediaQuery.of(context).size.width,
+                              width: MediaQuery.of(context).size.width*0.8,
                               child: FittedBox(
                                 fit: BoxFit.cover,
                                 clipBehavior: Clip.hardEdge,
@@ -151,11 +146,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 ),
                               ),
                             ),
-                          ),
-                          Image.asset(
-                            'assets/onboarding1.png',
-                            height: 600.0,
-                            width: MediaQuery.of(context).size.width,
                           ),
                           Positioned(
                             top: 3,
