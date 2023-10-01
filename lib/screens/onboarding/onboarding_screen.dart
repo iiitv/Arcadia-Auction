@@ -56,14 +56,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
           ),
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 40.0),
+            padding: EdgeInsets.symmetric(vertical: 22.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Container(
+                    padding: EdgeInsets.only(right: 8),
                     alignment: Alignment.centerRight,
                     child: _currentPage != 2
-                        ? FlatButton(
+                        ? TextButton(
                             onPressed: () => Navigator.of(context)
                                 .pushReplacementNamed(SignInScreen.routeName),
                             child: Text(
@@ -74,7 +75,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ),
                           )
-                        : FlatButton(
+                        : TextButton(
                             onPressed: () => Navigator.of(context)
                                 .pushReplacementNamed(SignInScreen.routeName),
                             child: Text(
@@ -86,7 +87,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             ),
                           )),
                 Container(
-                  height: 600.0,
+                  height:MediaQuery.of(context).size.height*0.75,
                   // width: MediaQuery.of(context).size.width,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
@@ -105,8 +106,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             children: [
                               Center(
                                 child: Container(
-                                  height: 600.0,
-                                  width: MediaQuery.of(context).size.width,
+                                  height:MediaQuery.of(context).size.height*0.75,
+                                  width: MediaQuery.of(context).size.width*0.8,
                                   child: FittedBox(
                                     fit: BoxFit.cover,
                                     clipBehavior: Clip.hardEdge,
@@ -118,7 +119,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                               Positioned(
                                 top: 3,
-                                left: 90,
+                                left: 40,
                                 child: Center(
                                   child: Text(
                                     'Make Your Profile',
@@ -129,12 +130,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ],
                           ),
-
-                          // SizedBox(height: 15.0),
-                          // Text(
-                          //   'Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et.',
-                          //   style: kSubtitleStyle,
-                          // ),
                         ],
                       ),
                       Stack(
@@ -142,7 +137,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           Center(
                             child: Container(
                               height: 600.0,
-                              width: MediaQuery.of(context).size.width,
+                              width: MediaQuery.of(context).size.width*0.8,
                               child: FittedBox(
                                 fit: BoxFit.cover,
                                 clipBehavior: Clip.hardEdge,
@@ -152,11 +147,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ),
                           ),
-                          // Image.asset(
-                          //   'assets/onboarding1.png',
-                          //   height: 600.0,
-                          //   width: MediaQuery.of(context).size.width,
-                          // ),
                           Positioned(
                             top: 3,
                             left: 70,
@@ -206,9 +196,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+              SizedBox(
+                height: 20,
+              ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: _buildPageIndicator(),
@@ -217,31 +207,36 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ? Expanded(
                         child: Align(
                           alignment: FractionalOffset.bottomRight,
-                          child: FlatButton(
+                          child: TextButton(
                             onPressed: () {
                               _pageController.nextPage(
                                 duration: Duration(milliseconds: 500),
                                 curve: Curves.ease,
                               );
                             },
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              mainAxisSize: MainAxisSize.min,
-                              children: <Widget>[
-                                Text(
-                                  'Next',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 22.0,
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 8.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  Container(
+                                    child: Text(
+                                      'Next',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 22.0,
+                                      ),
+                                    ),
                                   ),
-                                ),
-                                SizedBox(width: 10.0),
-                                Icon(
-                                  Icons.arrow_forward,
-                                  color: Colors.white,
-                                  size: 30.0,
-                                ),
-                              ],
+                                  SizedBox(width: 10.0),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.white,
+                                    size: 30.0,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -249,10 +244,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     : Expanded(
                         child: Align(
                           alignment: FractionalOffset.bottomRight,
-                          child: FlatButton(
-                              onPressed:
-                              () => Navigator.of(context)
-                                  .pushReplacementNamed(SignInScreen.routeName),
+                          child: TextButton(
+                            onPressed: () => Navigator.of(context)
+                                .pushReplacementNamed(SignInScreen.routeName),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               mainAxisSize: MainAxisSize.min,
