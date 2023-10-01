@@ -24,8 +24,8 @@ import 'screens/onboarding/signin_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIOverlays(
-      [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+  SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual, overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
   FirebaseMessaging.onBackgroundMessage(_messageHandler);
   SystemChrome.setPreferredOrientations
   ([
