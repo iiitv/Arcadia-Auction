@@ -63,7 +63,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 Container(
                     alignment: Alignment.centerRight,
                     child: _currentPage != 2
-                        ? FlatButton(
+                        ? TextButton(
                             onPressed: () => Navigator.of(context)
                                 .pushReplacementNamed(SignInScreen.routeName),
                             child: Text(
@@ -74,7 +74,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ),
                           )
-                        : FlatButton(
+                        : TextButton(
                             onPressed: () => Navigator.of(context)
                                 .pushReplacementNamed(SignInScreen.routeName),
                             child: Text(
@@ -217,7 +217,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ? Expanded(
                         child: Align(
                           alignment: FractionalOffset.bottomRight,
-                          child: FlatButton(
+                          child: TextButton(
                             onPressed: () {
                               _pageController.nextPage(
                                 duration: Duration(milliseconds: 500),
@@ -249,7 +249,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     : Expanded(
                         child: Align(
                           alignment: FractionalOffset.bottomRight,
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed:
                               () => Navigator.of(context)
                                   .pushReplacementNamed(SignInScreen.routeName),

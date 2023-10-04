@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-
 class RulesPdfViewer extends StatefulWidget {
   static const routeName = '/rules-pdf-viewer';
-
   @override
   _RulesPdfViewerState createState() => _RulesPdfViewerState();
 }
-
 class _RulesPdfViewerState extends State<RulesPdfViewer> {
   PdfViewerController? _pdfViewerController;
   @override
@@ -16,9 +13,7 @@ class _RulesPdfViewerState extends State<RulesPdfViewer> {
     _pdfViewerController!.jumpToPage(1);
     super.initState();
   }
-
   PdfTextSearchResult? _searchResult;
-
   @override
   Widget build(BuildContext context) {
     //  String pdfUrl = ModalRoute.of(context)!.settings.arguments as String;
@@ -83,7 +78,7 @@ class _RulesPdfViewerState extends State<RulesPdfViewer> {
         // child: SfPdfViewer.network(
         //   pdfUrl,
         //   initialZoomLevel: 2,
-        // ),
+        // ),name
         child: SfPdfViewer.asset('assets/docs/RuleBook.pdf'),
       ),
     );
