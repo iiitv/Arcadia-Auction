@@ -13,10 +13,17 @@ packages:
     dependency: transitive
     description:
       name: _flutterfire_internals
+<<<<<<< HEAD
       sha256: "2d8e8e123ca3675625917f535fcc0d3a50092eef44334168f9b18adc050d4c6e"
       url: "https://pub.dev"
     source: hosted
     version: "1.3.6"
+=======
+      sha256: d84d98f1992976775f83083523a34c5d22fea191eec3abb2bd09537fb623c2e0
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.7"
+>>>>>>> Rebuildthescreen
   analyzer:
     dependency: transitive
     description:
@@ -45,10 +52,17 @@ packages:
     dependency: transitive
     description:
       name: async
+<<<<<<< HEAD
       sha256: bfe67ef28df125b7dddcea62755991f807aa39a2492a23e1550161692950bbe0
       url: "https://pub.dev"
     source: hosted
     version: "2.10.0"
+=======
+      sha256: "947bfcf187f74dbc5e146c9eb9c0f10c9f8b30743e341481c1e2ed3ecc18c20c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.11.0"
+>>>>>>> Rebuildthescreen
   auto_size_text_pk:
     dependency: transitive
     description:
@@ -69,26 +83,47 @@ packages:
     dependency: "direct main"
     description:
       name: cached_network_image
+<<<<<<< HEAD
       sha256: fd3d0dc1d451f9a252b32d95d3f0c3c487bc41a75eba2e6097cb0b9c71491b15
       url: "https://pub.dev"
     source: hosted
     version: "3.2.3"
+=======
+      sha256: f98972704692ba679db144261172a8e20feb145636c617af0eb4022132a6797f
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.3.0"
+>>>>>>> Rebuildthescreen
   cached_network_image_platform_interface:
     dependency: transitive
     description:
       name: cached_network_image_platform_interface
+<<<<<<< HEAD
       sha256: bb2b8403b4ccdc60ef5f25c70dead1f3d32d24b9d6117cfc087f496b178594a7
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+=======
+      sha256: "56aa42a7a01e3c9db8456d9f3f999931f1e05535b5a424271e9a38cabf066613"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0"
+>>>>>>> Rebuildthescreen
   cached_network_image_web:
     dependency: transitive
     description:
       name: cached_network_image_web
+<<<<<<< HEAD
       sha256: b8eb814ebfcb4dea049680f8c1ffb2df399e4d03bf7a352c775e26fa06e02fa0
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
+=======
+      sha256: "759b9a9f8f6ccbb66c185df805fac107f05730b1dab9c64626d1008cca532257"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
+>>>>>>> Rebuildthescreen
   carousel_slider:
     dependency: "direct main"
     description:
@@ -101,10 +136,17 @@ packages:
     dependency: transitive
     description:
       name: characters
+<<<<<<< HEAD
       sha256: e6a326c8af69605aec75ed6c187d06b349707a27fbff8222ca9cc2cff167975c
       url: "https://pub.dev"
     source: hosted
     version: "1.2.1"
+=======
+      sha256: "04a925763edad70e8443c99234dc3328f442e811f1d8fd1a72f1c8ad0f69a605"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.0"
+>>>>>>> Rebuildthescreen
   clock:
     dependency: transitive
     description:
@@ -117,34 +159,62 @@ packages:
     dependency: "direct main"
     description:
       name: cloud_firestore
+<<<<<<< HEAD
       sha256: "50e1ffa143fc5c49db1800392f8d9524fd015f9d26a9e4fc01b5ddb1e603e01b"
       url: "https://pub.dev"
     source: hosted
     version: "4.9.2"
+=======
+      sha256: "1179ae4c69e2ea18179d844d70fc6ed2f082a2bbeb7fa62d35a2a24e2992bd4d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.9.3"
+>>>>>>> Rebuildthescreen
   cloud_firestore_platform_interface:
     dependency: transitive
     description:
       name: cloud_firestore_platform_interface
+<<<<<<< HEAD
       sha256: "150e603a40d52b3199e46b1e38d9f8ef8c2dee9e1fb2122d58d456c50015bf7c"
       url: "https://pub.dev"
     source: hosted
     version: "5.16.1"
+=======
+      sha256: acdcf0743bbdd0e6b342f3d2033e15d260a2c6f9434dd34b008b8f1c35e62b23
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.16.2"
+>>>>>>> Rebuildthescreen
   cloud_firestore_web:
     dependency: transitive
     description:
       name: cloud_firestore_web
+<<<<<<< HEAD
       sha256: f033aef13b13f94b0f361898df39307d8710859c8912626cfb08e439e350bd66
       url: "https://pub.dev"
     source: hosted
     version: "3.7.1"
+=======
+      sha256: "321bb0732c8d782a49aede96805e59609e05cf98b6c34370faa04103f46a4a3a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.7.2"
+>>>>>>> Rebuildthescreen
   collection:
     dependency: transitive
     description:
       name: collection
+<<<<<<< HEAD
       sha256: cfc915e6923fe5ce6e153b0723c753045de46de1b4d63771530504004a45fae0
       url: "https://pub.dev"
     source: hosted
     version: "1.17.0"
+=======
+      sha256: f092b211a4319e98e5ff58223576de6c2803db36221657b46c82574721240687
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.17.2"
+>>>>>>> Rebuildthescreen
   convert:
     dependency: transitive
     description:
@@ -169,6 +239,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
+<<<<<<< HEAD
+=======
+  csslib:
+    dependency: transitive
+    description:
+      name: csslib
+      sha256: "706b5707578e0c1b4b7550f64078f0a0f19dec3f50a178ffae7006b0a9ca58fb"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+>>>>>>> Rebuildthescreen
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -185,6 +266,25 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.7"
+<<<<<<< HEAD
+=======
+  device_info_plus:
+    dependency: transitive
+    description:
+      name: device_info_plus
+      sha256: "86add5ef97215562d2e090535b0a16f197902b10c369c558a100e74ea06e8659"
+      url: "https://pub.dev"
+    source: hosted
+    version: "9.0.3"
+  device_info_plus_platform_interface:
+    dependency: transitive
+    description:
+      name: device_info_plus_platform_interface
+      sha256: d3b01d5868b50ae571cd1dc6e502fc94d956b665756180f7b16ead09e836fd64
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.0"
+>>>>>>> Rebuildthescreen
   fake_async:
     dependency: transitive
     description:
@@ -197,18 +297,32 @@ packages:
     dependency: transitive
     description:
       name: ffi
+<<<<<<< HEAD
       sha256: ed5337a5660c506388a9f012be0288fb38b49020ce2b45fe1f8b8323fe429f99
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+=======
+      sha256: "7bf0adc28a23d395f19f3f1eb21dd7cfd1dd9f8e1c50051c069122e6853bc878"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
+>>>>>>> Rebuildthescreen
   file:
     dependency: transitive
     description:
       name: file
+<<<<<<< HEAD
       sha256: "1b92bec4fc2a72f59a8e15af5f52cd441e4a7860b49499d69dfa817af20e925d"
       url: "https://pub.dev"
     source: hosted
     version: "6.1.4"
+=======
+      sha256: "5fc22d7c25582e38ad9a8515372cd9a93834027aacf1801cf01164dac0ffa08c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.0"
+>>>>>>> Rebuildthescreen
   file_selector_linux:
     dependency: transitive
     description:
@@ -245,36 +359,64 @@ packages:
     dependency: "direct main"
     description:
       name: firebase_auth
+<<<<<<< HEAD
       sha256: e7b7e2a08888cb8ef073a9b6d4df9039ea0ff07c920d4258fb4886c55fe2dbb6
       url: "https://pub.dev"
     source: hosted
     version: "4.10.0"
+=======
+      sha256: "95c74884ff25eafcbbbcd5506b738e68ee98ff54d09522a6092a2fb95d02ee7a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.10.1"
+>>>>>>> Rebuildthescreen
   firebase_auth_platform_interface:
     dependency: transitive
     description:
       name: firebase_auth_platform_interface
+<<<<<<< HEAD
       sha256: "4862bd649268e32ebd685a58abe1eb7ef13aef3f668ce9c56a7d283c971ec6ff"
       url: "https://pub.dev"
     source: hosted
     version: "6.19.0"
+=======
+      sha256: "05d2636673e145d2b5eccc452c009808af4c15e8b402f34bb8fec63f2c76e86b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.19.1"
+>>>>>>> Rebuildthescreen
   firebase_auth_web:
     dependency: transitive
     description:
       name: firebase_auth_web
+<<<<<<< HEAD
       sha256: "090d531cc0dcf1e39edc0d64cffa18ccc5745b1fd1081a13ee1bf42d861ff764"
       url: "https://pub.dev"
     source: hosted
     version: "5.8.1"
+=======
+      sha256: "4b8374da5d8969f99453ebd65074c1d379fe781bb3680fa7f65a4d3ac4ec87b3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.8.2"
+>>>>>>> Rebuildthescreen
   firebase_core:
     dependency: "direct main"
     description:
       name: firebase_core
+<<<<<<< HEAD
       sha256: "675c209c94a1817649137cbd113fc4c9ae85e48d03dd578629abbec6d8a4d93d"
       url: "https://pub.dev"
     source: hosted
     version: "2.16.0"
+=======
+      sha256: "95580fa07c8ca3072a2bb1fecd792616a33f8683477d25b7d29d3a6a399e6ece"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.17.0"
+>>>>>>> Rebuildthescreen
   firebase_core_platform_interface:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: firebase_core_platform_interface
       sha256: b63e3be6c96ef5c33bdec1aab23c91eb00696f6452f0519401d640938c94cba2
@@ -293,55 +435,98 @@ packages:
     dependency: "direct main"
     description:
       name: firebase_messaging
+<<<<<<< HEAD
       sha256: "4544524c22de3ffdc7e0ffaeeba212a04d09e76d0549ae6f42ce285d9d8f0513"
       url: "https://pub.dev"
     source: hosted
     version: "14.6.8"
+=======
+      sha256: "67f9d7c87457e71ad78ee81e332f232b8a24f7d5e338f8c958fa7d6e9e0e3636"
+      url: "https://pub.dev"
+    source: hosted
+    version: "14.6.9"
+>>>>>>> Rebuildthescreen
   firebase_messaging_platform_interface:
     dependency: transitive
     description:
       name: firebase_messaging_platform_interface
+<<<<<<< HEAD
       sha256: a6e1fae8242a14d5d8f5ab1cf94693511f06bab49ff1d46e3d83c0af3c4becb8
       url: "https://pub.dev"
     source: hosted
     version: "4.5.7"
+=======
+      sha256: "8c7ced3201886ad7ba37f344c1468ccfc08abb3023922e0e5a016eaf38abb96c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.5.8"
+>>>>>>> Rebuildthescreen
   firebase_messaging_web:
     dependency: transitive
     description:
       name: firebase_messaging_web
+<<<<<<< HEAD
       sha256: a9fe837dc2dcdd3e32e6109a6b0ce62592d7a44cb8f69cb5b73190865c5aa28e
       url: "https://pub.dev"
     source: hosted
     version: "3.5.7"
+=======
+      sha256: b601322bdb44e2fefe4cc7b85ef0dbb7a2479d4a7653a51340821cf8d60696b5
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.5.8"
+>>>>>>> Rebuildthescreen
   firebase_storage:
     dependency: "direct main"
     description:
       name: firebase_storage
+<<<<<<< HEAD
       sha256: "0b6423dc6acb8185121a974843ab7678127b93fe68f22683f3852b3634e19c8e"
       url: "https://pub.dev"
     source: hosted
     version: "11.2.7"
+=======
+      sha256: "4ceb092cd14c3bce0dc8cd4046754cd1e5e5c1977155e286b512b3f84fe1c03e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "11.2.8"
+>>>>>>> Rebuildthescreen
   firebase_storage_platform_interface:
     dependency: transitive
     description:
       name: firebase_storage_platform_interface
+<<<<<<< HEAD
       sha256: "8ad840f019b4d3e25dcf9fa64563dc9eff981f9ca9207aff7b717038e69ec868"
       url: "https://pub.dev"
     source: hosted
     version: "4.4.6"
+=======
+      sha256: "88f8b8bb7181eef125536297f11b28171f59d2f53a59610e3966c2e38be3de4c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.4.7"
+>>>>>>> Rebuildthescreen
   firebase_storage_web:
     dependency: transitive
     description:
       name: firebase_storage_web
+<<<<<<< HEAD
       sha256: "37b44ea1f54ad993a1b0aea99d7083b251669f91af799e50cc3e84a969642f8f"
       url: "https://pub.dev"
     source: hosted
     version: "3.6.7"
+=======
+      sha256: bd05589cf17a8d5e2a90bdffcdab434c97e27bc37ca0056bfa90accf0366a7b0
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.6.8"
+>>>>>>> Rebuildthescreen
   flutter:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
   flutter_blurhash:
     dependency: transitive
     description:
@@ -350,6 +535,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.0"
+=======
+>>>>>>> Rebuildthescreen
   flutter_cache_manager:
     dependency: transitive
     description:
@@ -362,10 +549,17 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_native_splash
+<<<<<<< HEAD
       sha256: bd36d1a7f05ff8378cad17d20c33ca904630bfd3fcf8b15c9e8237efbccfad0a
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0+1"
+=======
+      sha256: "91004565166dbbc7a85e7e99b84124a287839830ca957cfe45004793fe6fe69f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.3"
+>>>>>>> Rebuildthescreen
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -388,10 +582,17 @@ packages:
     dependency: "direct main"
     description:
       name: font_awesome_flutter
+<<<<<<< HEAD
       sha256: "959ef4add147753f990b4a7c6cccb746d5792dbdc81b1cde99e62e7edb31b206"
       url: "https://pub.dev"
     source: hosted
     version: "10.4.0"
+=======
+      sha256: "5fb789145cae1f4c3245c58b3f8fb287d055c26323879eab57a7bf0cfd1e45f3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "10.5.0"
+>>>>>>> Rebuildthescreen
   glob:
     dependency: transitive
     description:
@@ -404,10 +605,17 @@ packages:
     dependency: "direct main"
     description:
       name: google_fonts
+<<<<<<< HEAD
       sha256: "6b6f10f0ce3c42f6552d1c70d2c28d764cf22bb487f50f66cca31dcd5194f4d6"
       url: "https://pub.dev"
     source: hosted
     version: "4.0.4"
+=======
+      sha256: f0b8d115a13ecf827013ec9fc883390ccc0e87a96ed5347a3114cac177ef18e8
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.0"
+>>>>>>> Rebuildthescreen
   google_identity_services_web:
     dependency: transitive
     description:
@@ -452,18 +660,40 @@ packages:
     dependency: transitive
     description:
       name: google_sign_in_web
+<<<<<<< HEAD
       sha256: b48263e47f9493ba4120ccdfffe7412549ee297e82b97be9b8fa16ea8919ffbe
       url: "https://pub.dev"
     source: hosted
     version: "0.12.0+4"
+=======
+      sha256: "939e9172a378ec4eaeb7f71eeddac9b55ebd0e8546d336daec476a68e5279766"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.12.0+5"
+  html:
+    dependency: transitive
+    description:
+      name: html
+      sha256: "3a7812d5bcd2894edf53dfaf8cd640876cf6cef50a8f238745c8b8120ea74d3a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.15.4"
+>>>>>>> Rebuildthescreen
   http:
     dependency: transitive
     description:
       name: http
+<<<<<<< HEAD
       sha256: "5895291c13fa8a3bd82e76d5627f69e0d85ca6a30dcac95c4ea19a5d555879c2"
       url: "https://pub.dev"
     source: hosted
     version: "0.13.6"
+=======
+      sha256: "759d1a329847dd0f39226c688d3e06a6b8679668e350e2891a6474f8b4bb8525"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
+>>>>>>> Rebuildthescreen
   http_parser:
     dependency: transitive
     description:
@@ -476,10 +706,17 @@ packages:
     dependency: transitive
     description:
       name: image
+<<<<<<< HEAD
       sha256: "02bafd3b4f399bfeb10034deba9753d93b55ce41cd0c4d3d8b355626f80e5b32"
       url: "https://pub.dev"
     source: hosted
     version: "3.1.3"
+=======
+      sha256: "028f61960d56f26414eb616b48b04eb37d700cbe477b7fb09bf1d7ce57fd9271"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.3"
+>>>>>>> Rebuildthescreen
   image_picker:
     dependency: "direct main"
     description:
@@ -500,10 +737,17 @@ packages:
     dependency: transitive
     description:
       name: image_picker_for_web
+<<<<<<< HEAD
       sha256: "869fe8a64771b7afbc99fc433a5f7be2fea4d1cb3d7c11a48b6b579eb9c797f0"
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
+=======
+      sha256: "50bc9ae6a77eea3a8b11af5eb6c661eeb858fdd2f734c2a4fd17086922347ef7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
+>>>>>>> Rebuildthescreen
   image_picker_ios:
     dependency: transitive
     description:
@@ -556,6 +800,7 @@ packages:
     dependency: transitive
     description:
       name: js
+<<<<<<< HEAD
       sha256: "5528c2f391ededb7775ec1daa69e65a2d61276f7552de2b5f7b8d34ee9fd4ab7"
       url: "https://pub.dev"
     source: hosted
@@ -568,30 +813,57 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
+=======
+      sha256: f2c445dce49627136094980615a031419f7f3eb393237e4ecd97ac15dea343f3
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.6.7"
+>>>>>>> Rebuildthescreen
   matcher:
     dependency: transitive
     description:
       name: matcher
+<<<<<<< HEAD
       sha256: "16db949ceee371e9b99d22f88fa3a73c4e59fd0afed0bd25fc336eb76c198b72"
       url: "https://pub.dev"
     source: hosted
     version: "0.12.13"
+=======
+      sha256: "1803e76e6653768d64ed8ff2e1e67bea3ad4b923eb5c56a295c3e634bad5960e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.12.16"
+>>>>>>> Rebuildthescreen
   material_color_utilities:
     dependency: transitive
     description:
       name: material_color_utilities
+<<<<<<< HEAD
       sha256: d92141dc6fe1dad30722f9aa826c7fbc896d021d792f80678280601aff8cf724
       url: "https://pub.dev"
     source: hosted
     version: "0.2.0"
+=======
+      sha256: "9528f2f296073ff54cb9fee677df673ace1218163c3bc7628093e7eed5203d41"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.0"
+>>>>>>> Rebuildthescreen
   meta:
     dependency: transitive
     description:
       name: meta
+<<<<<<< HEAD
       sha256: "6c268b42ed578a53088d834796959e4a1814b5e9e164f147f580a386e5decf42"
       url: "https://pub.dev"
     source: hosted
     version: "1.8.0"
+=======
+      sha256: "3c74dbf8763d36539f114c799d8a2d87343b5067e9d796ca22b5eb8437090ee3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.9.1"
+>>>>>>> Rebuildthescreen
   mime:
     dependency: transitive
     description:
@@ -612,10 +884,17 @@ packages:
     dependency: transitive
     description:
       name: octo_image
+<<<<<<< HEAD
       sha256: "107f3ed1330006a3bea63615e81cf637433f5135a52466c7caa0e7152bca9143"
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
+=======
+      sha256: "45b40f99622f11901238e18d48f5f12ea36426d8eced9f4cbf58479c7aa2430d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
+>>>>>>> Rebuildthescreen
   package_config:
     dependency: transitive
     description:
@@ -628,10 +907,17 @@ packages:
     dependency: transitive
     description:
       name: path
+<<<<<<< HEAD
       sha256: db9d4f58c908a4ba5953fcee2ae317c94889433e5024c27ce74a37f94267945b
       url: "https://pub.dev"
     source: hosted
     version: "1.8.2"
+=======
+      sha256: "8829d8a55c13fc0e37127c29fedf290c102f4e40ae94ada574091fe0ff96c917"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.8.3"
+>>>>>>> Rebuildthescreen
   path_provider:
     dependency: transitive
     description:
@@ -684,10 +970,17 @@ packages:
     dependency: "direct main"
     description:
       name: permission_handler
+<<<<<<< HEAD
       sha256: ad65ba9af42a3d067203641de3fd9f547ded1410bad3b84400c2b4899faede70
       url: "https://pub.dev"
     source: hosted
     version: "11.0.0"
+=======
+      sha256: "284a66179cabdf942f838543e10413246f06424d960c92ba95c84439154fcac8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "11.0.1"
+>>>>>>> Rebuildthescreen
   permission_handler_android:
     dependency: transitive
     description:
@@ -724,10 +1017,17 @@ packages:
     dependency: transitive
     description:
       name: petitparser
+<<<<<<< HEAD
       sha256: "49392a45ced973e8d94a85fdb21293fbb40ba805fc49f2965101ae748a3683b4"
       url: "https://pub.dev"
     source: hosted
     version: "5.1.0"
+=======
+      sha256: cb3798bef7fc021ac45b308f4b51208a152792445cce0448c9a4ba5879dd8750
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.4.0"
+>>>>>>> Rebuildthescreen
   pigeon:
     dependency: transitive
     description:
@@ -784,6 +1084,17 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.2.1"
+<<<<<<< HEAD
+=======
+  rflutter_alert:
+    dependency: "direct main"
+    description:
+      name: rflutter_alert
+      sha256: "8ff35e3f9712ba24c746499cfa95bf320385edf38901a1a4eab0fe555867f66c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.7"
+>>>>>>> Rebuildthescreen
   rxdart:
     dependency: transitive
     description:
@@ -801,6 +1112,7 @@ packages:
     dependency: transitive
     description:
       name: source_span
+<<<<<<< HEAD
       sha256: dd904f795d4b4f3b870833847c461801f6750a9fa8e61ea5ac53f9422b31f250
       url: "https://pub.dev"
     source: hosted
@@ -813,22 +1125,42 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.0"
+=======
+      sha256: "53e943d4206a5e30df338fd4c6e7a077e02254531b138a15aec3bd143c1a8b3c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.10.0"
+>>>>>>> Rebuildthescreen
   sqflite:
     dependency: transitive
     description:
       name: sqflite
+<<<<<<< HEAD
       sha256: b4d6710e1200e96845747e37338ea8a819a12b51689a3bcf31eff0003b37a0b9
       url: "https://pub.dev"
     source: hosted
     version: "2.2.8+4"
+=======
+      sha256: "591f1602816e9c31377d5f008c2d9ef7b8aca8941c3f89cc5fd9d84da0c38a9a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.0"
+>>>>>>> Rebuildthescreen
   sqflite_common:
     dependency: transitive
     description:
       name: sqflite_common
+<<<<<<< HEAD
       sha256: "8f7603f3f8f126740bc55c4ca2d1027aab4b74a1267a3e31ce51fe40e3b65b8f"
       url: "https://pub.dev"
     source: hosted
     version: "2.4.5+1"
+=======
+      sha256: "1b92f368f44b0dee2425bb861cfa17b6f6cf3961f762ff6f941d20b33355660a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.5.0"
+>>>>>>> Rebuildthescreen
   stack_trace:
     dependency: transitive
     description:
@@ -857,6 +1189,7 @@ packages:
     dependency: transitive
     description:
       name: syncfusion_flutter_core
+<<<<<<< HEAD
       sha256: "9f0a4593f7642b2f106e329734d0e5fc746baf8d0a59495eec586cd0d9ba7d02"
       url: "https://pub.dev"
     source: hosted
@@ -869,6 +1202,68 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "22.2.12"
+=======
+      sha256: "505a07deaeb326ae9af5ee4e50937b7563cbb639982e760c26f3511b4fa535d5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+  syncfusion_flutter_pdf:
+    dependency: transitive
+    description:
+      name: syncfusion_flutter_pdf
+      sha256: df8cc9ce3efe14c8d229bcac93b16d361ac1c0e01b9700ee75fe1bdfce440f63
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+  syncfusion_flutter_pdfviewer:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_pdfviewer
+      sha256: "202a8f39dc80b5e9f24dd59cb3979aae73fa5cd2533597d07baaf4638084eadc"
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+  syncfusion_flutter_signaturepad:
+    dependency: transitive
+    description:
+      name: syncfusion_flutter_signaturepad
+      sha256: "26a1d4bfd1d16fac091f1671c9426e75830545fccd46eb5a71db948f7e17bcdf"
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+  syncfusion_pdfviewer_macos:
+    dependency: transitive
+    description:
+      name: syncfusion_pdfviewer_macos
+      sha256: "176a44ee71e07dac4ca1e662eb9d778217287a53343f65747a34254821c13fd4"
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+  syncfusion_pdfviewer_platform_interface:
+    dependency: transitive
+    description:
+      name: syncfusion_pdfviewer_platform_interface
+      sha256: d9fe70d59dc3d11b225291b458eb86785048b32f827723818b02133fce79db7d
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+  syncfusion_pdfviewer_web:
+    dependency: transitive
+    description:
+      name: syncfusion_pdfviewer_web
+      sha256: "26df36c18aa1b11d30cdbf578c5e3f51db875092c8cbe96a3d6e18bc35e5d4f9"
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+  syncfusion_pdfviewer_windows:
+    dependency: transitive
+    description:
+      name: syncfusion_pdfviewer_windows
+      sha256: "0d7259c645f6572f39923c9492d8349d7ffd51d263bdbc39e7b231fbda73abe7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.39"
+>>>>>>> Rebuildthescreen
   synchronized:
     dependency: transitive
     description:
@@ -889,10 +1284,17 @@ packages:
     dependency: transitive
     description:
       name: test_api
+<<<<<<< HEAD
       sha256: ad540f65f92caa91bf21dfc8ffb8c589d6e4dc0c2267818b4cc2792857706206
       url: "https://pub.dev"
     source: hosted
     version: "0.4.16"
+=======
+      sha256: "75760ffd7786fffdfb9597c35c5b27eaeec82be8edfb6d71d32651128ed7aab8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.6.0"
+>>>>>>> Rebuildthescreen
   typed_data:
     dependency: transitive
     description:
@@ -905,18 +1307,96 @@ packages:
     dependency: transitive
     description:
       name: universal_io
+<<<<<<< HEAD
       sha256: "06866290206d196064fd61df4c7aea1ffe9a4e7c4ccaa8fcded42dd41948005d"
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
+=======
+      sha256: "1722b2dcc462b4b2f3ee7d188dad008b6eb4c40bbd03a3de451d82c78bba9aad"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.2"
+  url_launcher:
+    dependency: transitive
+    description:
+      name: url_launcher
+      sha256: "47e208a6711459d813ba18af120d9663c20bdf6985d6ad39fe165d2538378d27"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.14"
+  url_launcher_android:
+    dependency: transitive
+    description:
+      name: url_launcher_android
+      sha256: b04af59516ab45762b2ca6da40fa830d72d0f6045cd97744450b73493fa76330
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.0"
+  url_launcher_ios:
+    dependency: transitive
+    description:
+      name: url_launcher_ios
+      sha256: "7c65021d5dee51813d652357bc65b8dd4a6177082a9966bc8ba6ee477baa795f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.1.5"
+  url_launcher_linux:
+    dependency: transitive
+    description:
+      name: url_launcher_linux
+      sha256: b651aad005e0cb06a01dbd84b428a301916dc75f0e7ea6165f80057fee2d8e8e
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.6"
+  url_launcher_macos:
+    dependency: transitive
+    description:
+      name: url_launcher_macos
+      sha256: b55486791f666e62e0e8ff825e58a023fd6b1f71c49926483f1128d3bbd8fe88
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.7"
+  url_launcher_platform_interface:
+    dependency: transitive
+    description:
+      name: url_launcher_platform_interface
+      sha256: "95465b39f83bfe95fcb9d174829d6476216f2d548b79c38ab2506e0458787618"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.5"
+  url_launcher_web:
+    dependency: transitive
+    description:
+      name: url_launcher_web
+      sha256: "2942294a500b4fa0b918685aff406773ba0a4cd34b7f42198742a94083020ce5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.20"
+  url_launcher_windows:
+    dependency: transitive
+    description:
+      name: url_launcher_windows
+      sha256: "95fef3129dc7cfaba2bc3d5ba2e16063bb561fc6d78e63eee16162bc70029069"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.8"
+>>>>>>> Rebuildthescreen
   uuid:
     dependency: transitive
     description:
       name: uuid
+<<<<<<< HEAD
       sha256: b715b8d3858b6fa9f68f87d20d98830283628014750c2b09b6f516c1da4af2a7
       url: "https://pub.dev"
     source: hosted
     version: "4.1.0"
+=======
+      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.7"
+>>>>>>> Rebuildthescreen
   vector_math:
     dependency: transitive
     description:
@@ -929,10 +1409,17 @@ packages:
     dependency: "direct main"
     description:
       name: velocity_x
+<<<<<<< HEAD
       sha256: "16afc758004143b2f5f6955c39ac4a7381c367067ee9f005764182a4624a44cb"
       url: "https://pub.dev"
     source: hosted
     version: "4.1.0"
+=======
+      sha256: "41734c40f1609aaafa5337fd9a9e7e9aaf3464dce8ee2cad18be4226b184e5ca"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.1"
+>>>>>>> Rebuildthescreen
   vxstate:
     dependency: transitive
     description:
@@ -945,18 +1432,48 @@ packages:
     dependency: transitive
     description:
       name: watcher
+<<<<<<< HEAD
       sha256: "6a7f46926b01ce81bfc339da6a7f20afbe7733eff9846f6d6a5466aa4c6667c0"
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
+=======
+      sha256: "3d2ad6751b3c16cf07c7fca317a1413b3f26530319181b37e3b9039b84fc01d8"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
+  web:
+    dependency: transitive
+    description:
+      name: web
+      sha256: dc8ccd225a2005c1be616fe02951e2e342092edf968cf0844220383757ef8f10
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.4-beta"
+>>>>>>> Rebuildthescreen
   win32:
     dependency: transitive
     description:
       name: win32
+<<<<<<< HEAD
       sha256: "5a751eddf9db89b3e5f9d50c20ab8612296e4e8db69009788d6c8b060a84191c"
       url: "https://pub.dev"
     source: hosted
     version: "4.1.4"
+=======
+      sha256: "350a11abd2d1d97e0cc7a28a81b781c08002aa2864d9e3f192ca0ffa18b06ed3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.9"
+  win32_registry:
+    dependency: transitive
+    description:
+      name: win32_registry
+      sha256: "41fd8a189940d8696b1b810efb9abcf60827b6cbfab90b0c43e8439e3a39d85a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.2"
+>>>>>>> Rebuildthescreen
   xdg_directories:
     dependency: transitive
     description:
@@ -969,10 +1486,17 @@ packages:
     dependency: transitive
     description:
       name: xml
+<<<<<<< HEAD
       sha256: "80d494c09849dc3f899d227a78c30c5b949b985ededf884cb3f3bcd39f4b447a"
       url: "https://pub.dev"
     source: hosted
     version: "5.4.1"
+=======
+      sha256: "5bc72e1e45e941d825fd7468b9b4cc3b9327942649aeb6fc5cdbf135f0a86e84"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.3.0"
+>>>>>>> Rebuildthescreen
   yaml:
     dependency: transitive
     description:
@@ -982,5 +1506,10 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
+<<<<<<< HEAD
   dart: ">=2.19.0 <3.0.0"
   flutter: ">=3.7.0"
+=======
+  dart: ">=3.1.0 <4.0.0"
+  flutter: ">=3.13.0"
+>>>>>>> Rebuildthescreen
