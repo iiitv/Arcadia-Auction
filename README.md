@@ -65,7 +65,12 @@ Start working on this Project and getting started with Prerequisties.have a over
 ### Prerequisites
 
 you should have Flutter SDK installed in your environment.
+<<<<<<< HEAD
 * flutter
+=======
+* To Install flutter
+  
+>>>>>>> Rebuildthescreen
   ```sh
   git clone https://github.com/flutter/flutter.git -b stable
   ```
