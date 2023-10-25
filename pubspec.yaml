@@ -23,27 +23,6 @@ environment:
 dependencies:
   cached_network_image: ^3.1.0
   carousel_slider: ^4.0.0
-<<<<<<< HEAD
-  cloud_firestore: ^4.9.2
-  cupertino_icons: ^1.0.2
-  date_format: ^2.0.4
-  firebase_auth: ^4.10.0
-  firebase_core: ^2.16.0
-  firebase_messaging: ^14.6.8
-  firebase_storage: ^11.2.7
-  flutter:
-    sdk: flutter
-  flutter_native_splash: ^2.2.0+1
-  font_awesome_flutter: ^10.4.0
-  google_fonts: ^4.0.4
-  google_sign_in: ^6.1.5
-  image_picker: ^1.0.4
-  intl: ^0.18.1
-  permission_handler: ^11.0.0
-  provider: ^6.0.0
-  syncfusion_flutter_pdf: ^22.2.8
-  velocity_x: ^4.1.0
-=======
   cloud_firestore: ^4.9.3
   cupertino_icons: ^1.0.2
   date_format: ^2.0.4
@@ -65,7 +44,6 @@ dependencies:
   firebase_messaging: ^14.6.9
   syncfusion_flutter_pdfviewer: ^23.1.39
   rflutter_alert: ^2.0.7
->>>>>>> Rebuildthescreen
 
 dev_dependencies:
   flutter_test:

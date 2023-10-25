@@ -245,14 +245,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         child: Align(
                           alignment: FractionalOffset.bottomRight,
                           child: TextButton(
-<<<<<<< HEAD
                             onPressed: () => Navigator.of(context)
                                 .pushReplacementNamed(SignInScreen.routeName),
-=======
-                              onPressed:
-                              () => Navigator.of(context)
-                                  .pushReplacementNamed(SignInScreen.routeName),
->>>>>>> Rebuildthescreen
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               mainAxisSize: MainAxisSize.min,

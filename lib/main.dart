@@ -73,12 +73,7 @@ class MyApp extends StatelessWidget {
               title: 'CSGO League',
               theme: ThemeData(
                 primaryColor: CustomColors.primaryColor,
-<<<<<<< HEAD
-                colorScheme: ColorScheme.fromSwatch()
-                    .copyWith(secondary: CustomColors.secondaryColor),
-=======
                 hintColor: CustomColors.secondaryColor,
->>>>>>> Rebuildthescreen
                 textTheme:
                     GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
               ),
