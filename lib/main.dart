@@ -24,9 +24,14 @@ import 'screens/onboarding/signin_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIOverlays(
-      [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+  SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual, overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
   FirebaseMessaging.onBackgroundMessage(_messageHandler);
+  SystemChrome.setPreferredOrientations
+  ([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   runApp(MyApp());
 }
 
@@ -68,7 +73,7 @@ class MyApp extends StatelessWidget {
               title: 'CSGO League',
               theme: ThemeData(
                 primaryColor: CustomColors.primaryColor,
-                accentColor: CustomColors.secondaryColor,
+                hintColor: CustomColors.secondaryColor,
                 textTheme:
                     GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
               ),

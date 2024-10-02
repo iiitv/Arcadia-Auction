@@ -42,7 +42,7 @@ class _PlayerFormState extends State<PlayerForm> {
   Future<void> _showMyDialog() async {
     return showDialog<void>(
       context: context,
-      barrierDismissible: false, // user must tap button!
+      barrierDismissible: false, 
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Compulsary!!'),
@@ -75,7 +75,7 @@ class _PlayerFormState extends State<PlayerForm> {
 
     var permissionStatus = await Permission.photos.status;
 
-    if (permissionStatus.isGranted) {
+    //if (permissionStatus.isGranted) {
       //Select Image
       // image = (await _imagePicker.getImage(source: ImageSource.gallery))!;
       // var file = File(image.path);
@@ -99,9 +99,10 @@ class _PlayerFormState extends State<PlayerForm> {
       } else {
         print('No Image Path Received');
       }
-    } else {
-      print('Permission not granted. Try Again with permission access');
-    }
+   // }
+    //  else {
+    //   print('Permission not granted. Try Again with permission access');
+    // }
   }
 
   final _formKey = GlobalKey<FormState>();
@@ -109,16 +110,6 @@ class _PlayerFormState extends State<PlayerForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: CustomColors.primaryColor,
-      appBar: AppBar(
-        title: Text(
-          "Player Details Form",
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
-        iconTheme: IconThemeData(color: Colors.white),
-      ),
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.only(top: 24),
@@ -126,6 +117,17 @@ class _PlayerFormState extends State<PlayerForm> {
           color: CustomColors.primaryColor,
           child: Column(
             children: [
+              Container(
+                margin: EdgeInsets.only(top: 10),
+                padding: EdgeInsets.all(20),
+                width: double.infinity,
+                child: Center(
+                  child: Text(
+                    "Player Registration",
+                    style: TextStyle(color: Colors.yellow, fontSize: 30),
+                  ),
+                ),
+              ),
               SizedBox(
                 height: 12,
               ),
@@ -134,29 +136,34 @@ class _PlayerFormState extends State<PlayerForm> {
                   onTap: () async {
                     await uploadImage();
                   },
-                  child: Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(color: Colors.red[200]),
-                    child: _image != null
-                        ? Image.file(
-                            _image,
-                            width: 200.0,
-                            height: 200.0,
-                            fit: BoxFit.fitHeight,
-                          )
-                        : Container(
-                            decoration: BoxDecoration(color: Colors.red[200]),
-                            width: 200,
-                            height: 200,
-                            child: Icon(
-                              Icons.camera_alt,
-                              color: Colors.grey[800],
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(200),
+                    child: Container(
+                      width: 150,
+                      height: 150,
+                      decoration: BoxDecoration(color: Colors.grey),
+                      child: _image != null
+                          ? Image.file(
+                              _image,
+                              width: 150.0,
+                              height: 150.0,
+                              fit: BoxFit.fitHeight,
+                            )
+                          : Container(
+                              decoration: BoxDecoration(color: Colors.white70),
+                              width: 150,
+                              height: 150,
+                              child: Icon(
+                                Icons.add_a_photo_rounded,
+                                color: Colors.grey[800],
+                                size: 35,
+                              ),
                             ),
-                          ),
+                    ),
                   ),
                 ),
               ),
+              
               SizedBox(
                 height: 40,
               ),
@@ -169,19 +176,26 @@ class _PlayerFormState extends State<PlayerForm> {
                     children: [
                       TextFormField(
                         controller: namecontroller,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
                         decoration: InputDecoration(
                           hintText: "Enter Your Name",
-                          labelText: "Your Name",
+                          labelText: "Name",
+                          hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
-                          fillColor: CustomColors.firebaseGrey,
+                          fillColor: CustomColors.taskez1,
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
-                              color: Colors.blueAccent),
+                              color: Colors.white70),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                             borderSide: BorderSide(
-                              color: Colors.blueAccent,
+                              color: Colors.yellow,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
@@ -198,6 +212,7 @@ class _PlayerFormState extends State<PlayerForm> {
                           }
                           return null;
                         },
+                      
                       ),
                       SizedBox(
                         height: 40.0,
@@ -205,24 +220,28 @@ class _PlayerFormState extends State<PlayerForm> {
                       TextFormField(
                         cursorColor: CustomColors.primaryColor,
                         controller: studentIDcontroller,
+                        keyboardType:TextInputType.number ,
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: CustomColors.primaryColor,
+                          color: Colors.white,
                         ),
                         decoration: InputDecoration(
-                          hintText: "Ex:-20195513",
+                          hintText: " Ex:-20195513",
                           labelText: "Student ID",
+                          hintStyle:
+                              TextStyle(color: Colors.white54, fontSize: 16),
                           filled: true,
-                          fillColor: CustomColors.firebaseGrey,
+                          fillColor: CustomColors.taskez1,
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
-                              color: Colors.blueAccent),
+                              color: Colors.white70),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                             borderSide: BorderSide(
-                              color: Colors.blueAccent,
+                              color: Colors.yellow,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
@@ -245,19 +264,26 @@ class _PlayerFormState extends State<PlayerForm> {
                       ),
                       TextFormField(
                         controller: iGNcontroller,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
                         decoration: InputDecoration(
-                          hintText: "Ex:- MadMani",
-                          labelText: "IGN(In Game Name)",
+                          hintText: " Ex:- MadMani",
+                          labelText: "IGN (In Game Name)",
+                          hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
-                          fillColor: CustomColors.firebaseGrey,
+                          fillColor: CustomColors.taskez1,
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
-                              color: Colors.blueAccent),
+                              color: Colors.white70),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                             borderSide: BorderSide(
-                              color: Colors.blueAccent,
+                              color: Colors.yellow,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
@@ -281,20 +307,27 @@ class _PlayerFormState extends State<PlayerForm> {
                       TextFormField(
                         controller: gameHRScontroller,
                         keyboardType: TextInputType.numberWithOptions(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
                         obscureText: false,
                         decoration: InputDecoration(
                           hintText: "Ex:-1520",
                           labelText: "Game Hours",
+                          hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
-                          fillColor: CustomColors.firebaseGrey,
+                          fillColor: CustomColors.taskez1,
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
-                              color: Colors.blueAccent),
+                              color: Colors.white70),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                             borderSide: BorderSide(
-                              color: Colors.blueAccent,
+                              color: Colors.yellow,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
@@ -315,16 +348,16 @@ class _PlayerFormState extends State<PlayerForm> {
                         },
                       ),
                       SizedBox(
-                        height: 40.0,
+                        height: 25.0,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Primary Weapon:",
+                            "Primary Weapon",
                             style: TextStyle(
                                 fontSize: 16,
-                                color: Colors.blueAccent,
+                                color: Colors.yellow,
                                 fontWeight: FontWeight.bold),
                           ),
                           // SizedBox(width: 20,),
@@ -332,7 +365,7 @@ class _PlayerFormState extends State<PlayerForm> {
                             // menuMaxHeight: MediaQuery.of(context).size.height,
                             iconEnabledColor: Colors.blueAccent,
                             iconDisabledColor: Colors.blueAccent,
-
+                            dropdownColor: CustomColors.taskez1,
                             underline: Container(
                                 // child: Text("Primary Weapons"),
                                 color: Colors.transparent),
@@ -343,14 +376,19 @@ class _PlayerFormState extends State<PlayerForm> {
                                 child: Text(
                                   value.toString().split('.').last,
                                   style: TextStyle(
-                                      fontSize: 17, color: Colors.blueAccent),
+                                    color: primaryWeapons == value
+                                      ? Colors.yellow // Color for selected item
+                                      : Colors.white, 
+                                      fontSize: 17),
                                 ),
                               );
                             }).toList(),
                             onChanged: (value) {
                               setState(() {
                                 // print('value is : $value');
+                                
                                 primaryWeapons = value!;
+                                
                               });
                             },
                             // hint: Text(_playerStatus.toString().split('.').last),
@@ -358,21 +396,22 @@ class _PlayerFormState extends State<PlayerForm> {
                         ],
                       ),
                       SizedBox(
-                        height: 40.0,
+                        height: 10.0,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            " Secondary Weapon:",
+                            "Secondary Weapon",
                             style: TextStyle(
                                 fontSize: 16,
-                                color: Colors.blueAccent,
+                                color: Colors.yellow,
                                 fontWeight: FontWeight.bold),
                           ),
                           DropdownButton<Weapons>(
                             iconEnabledColor: Colors.blueAccent,
                             iconDisabledColor: Colors.blueAccent,
+                            dropdownColor: CustomColors.taskez1,
                             underline: Container(color: Colors.transparent),
                             value: secondadryWeapons,
                             // menuMaxHeight:
@@ -383,7 +422,11 @@ class _PlayerFormState extends State<PlayerForm> {
                                 child: Text(
                                   value.toString().split('.').last,
                                   style: TextStyle(
-                                      fontSize: 17, color: Colors.blueAccent),
+                                     color: secondadryWeapons == value
+                                      ? Colors.yellow // Color for selected item
+                                      : Colors.white, // Color for unselected items
+                                
+                                      fontSize: 17),
                                 ),
                               );
                             }).toList(),
@@ -398,25 +441,32 @@ class _PlayerFormState extends State<PlayerForm> {
                         ],
                       ),
                       SizedBox(
-                        height: 20.0,
+                        height: 25.0,
                       ),
                       TextFormField(
                         controller: streamURLcontroller,
                         obscureText: false,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: Colors.white,
+                        ),
                         decoration: InputDecoration(
                           hintText:
                               "https://steamcommunity.com/profiles/76561199007256891/",
                           labelText: "Steam URL",
+                          hintStyle: TextStyle(color: Colors.white54),
                           filled: true,
-                          fillColor: CustomColors.firebaseGrey,
+                          fillColor: CustomColors.taskez1,
+                          // floatingLabelStyle: TextStyle(color: Colors.yellow),
                           labelStyle: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 14,
-                              color: Colors.blueAccent),
+                              color: Colors.white70),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                             borderSide: BorderSide(
-                              color: Colors.blueAccent,
+                              color: Colors.yellow,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
@@ -479,18 +529,19 @@ class _PlayerFormState extends State<PlayerForm> {
                             child: Text(
                               "Register",
                               style: TextStyle(
-                                color: Colors.black54,
+                                color: CustomColors.taskez1,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18,
                               ),
                             ),
                             decoration: BoxDecoration(
-                              color: Colors.blue,
+                              color: Colors.yellow,
                               borderRadius: BorderRadius.circular(10),
                             ),
                           )),
                       SizedBox(height: 20),
-                      ElevatedButton.icon(
+                      ElevatedButton(
+                      
                         onPressed: () async {
                           await Provider.of<Auth>(context, listen: false)
                               .signOut();
@@ -499,8 +550,19 @@ class _PlayerFormState extends State<PlayerForm> {
                             return SignInScreen();
                           }), (route) => false);
                         },
-                        icon: Icon(Icons.arrow_forward),
-                        label: Text('Sign Out'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color.fromARGB(255, 73, 82, 96),
+                          shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(15))
+                           ),
+                       
+                         child:Padding(
+                           padding: const EdgeInsets.all(14.0),
+                           child: Text(
+                            'Sign Out',
+                            style: TextStyle(
+                                color: Colors.white, fontWeight: FontWeight.bold),
+                                                 ),
+                         ),
                       ),
                     ],
                   ),
@@ -512,4 +574,5 @@ class _PlayerFormState extends State<PlayerForm> {
       ),
     );
   }
+   
 }

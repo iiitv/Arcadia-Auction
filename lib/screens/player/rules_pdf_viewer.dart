@@ -1,5 +1,5 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class RulesPdfViewer extends StatefulWidget {
   static const routeName = '/rules-pdf-viewer';
@@ -9,83 +9,84 @@ class RulesPdfViewer extends StatefulWidget {
 }
 
 class _RulesPdfViewerState extends State<RulesPdfViewer> {
-  PdfViewerController? _pdfViewerController;
-  @override
-  void initState() {
-    _pdfViewerController = PdfViewerController();
-    _pdfViewerController!.jumpToPage(1);
-    super.initState();
-  }
+  // PdfViewerController? _pdfViewerController;
+  // @override
+  // void initState() {
+  //   _pdfViewerController = PdfViewerController();
+  //   _pdfViewerController!.jumpToPage(1);
+  //   super.initState();
+  // }
 
-  PdfTextSearchResult? _searchResult;
+  // PdfTextSearchResult? _searchResult;
 
   @override
   Widget build(BuildContext context) {
-    //  String pdfUrl = ModalRoute.of(context)!.settings.arguments as String;
+    Object? s = ModalRoute.of(context)?.settings.arguments;
+
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text('Rules'),
-        actions: <Widget>[
-          // IconButton(
-          //   icon: Icon(
-          //     Icons.search,
-          //     color: Colors.white,
-          //   ),
-          //   onPressed: () async {
-          //     _searchResult = await _pdfViewerController?.searchText(
-          //       'the',
-          //       searchOption: TextSearchOption.caseSensitive,
-          //     );
-          //   },
-          // ),
-          Visibility(
-            visible: _searchResult?.hasResult ?? false,
-            child: IconButton(
-              icon: Icon(
-                Icons.clear,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                setState(() {
-                  _searchResult!.clear();
-                });
-              },
-            ),
-          ),
-          Visibility(
-            visible: _searchResult?.hasResult ?? false,
-            child: IconButton(
-              icon: Icon(
-                Icons.keyboard_arrow_up,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                _searchResult?.previousInstance();
-              },
-            ),
-          ),
-          Visibility(
-            visible: _searchResult?.hasResult ?? false,
-            child: IconButton(
-              icon: Icon(
-                Icons.keyboard_arrow_down,
-                color: Colors.white,
-              ),
-              onPressed: () {
-                _searchResult?.nextInstance();
-              },
-            ),
-          ),
-        ],
-      ),
-      body: Container(
-        // child: SfPdfViewer.network(
-        //   pdfUrl,
-        //   initialZoomLevel: 2,
+        // appBar: AppBar(
+        //   centerTitle: true,
+        //   title: Text('Rules'),
+        //   actions: <Widget>[
+        //     // IconButton(
+        //     //   icon: Icon(
+        //     //     Icons.search,
+        //     //     color: Colors.white,
+        //     //   ),
+        //     //   onPressed: () async {
+        //     //     _searchResult = await _pdfViewerController?.searchText(
+        //     //       'the',
+        //     //       searchOption: TextSearchOption.caseSensitive,
+        //     //     );
+        //     //   },
+        //     // ),
+        //     Visibility(
+        //       visible: _searchResult?.hasResult ?? false,
+        //       child: IconButton(
+        //         icon: Icon(
+        //           Icons.clear,
+        //           color: Colors.white,
+        //         ),
+        //         onPressed: () {
+        //           setState(() {
+        //             _searchResult!.clear();
+        //           });
+        //         },
+        //       ),
+        //     ),
+        //     Visibility(
+        //       visible: _searchResult?.hasResult ?? false,
+        //       child: IconButton(
+        //         icon: Icon(
+        //           Icons.keyboard_arrow_up,
+        //           color: Colors.white,
+        //         ),
+        //         onPressed: () {
+        //           _searchResult?.previousInstance();
+        //         },
+        //       ),
+        //     ),
+        //     Visibility(
+        //       visible: _searchResult?.hasResult ?? false,
+        //       child: IconButton(
+        //         icon: Icon(
+        //           Icons.keyboard_arrow_down,
+        //           color: Colors.white,
+        //         ),
+        //         onPressed: () {
+        //           _searchResult?.nextInstance();
+        //         },
+        //       ),
+        //     ),
+        //   ],
         // ),
-        child: SfPdfViewer.asset('assets/docs/RuleBook.pdf'),
-      ),
-    );
+        // body: Container(
+        //   // child: SfPdfViewer.network(
+        //   //   pdfUrl,
+        //   //   initialZoomLevel: 2,
+        //   // ),
+        //   child: SfPdfViewer.asset('assets/docs/RuleBook.pdf'),
+        // ),
+        );
   }
 }
