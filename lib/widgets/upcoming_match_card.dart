@@ -67,9 +67,11 @@ class _UpcomingMatchCardState extends State<UpcomingMatchCard> {
                                 snapshot.data.toString(),
                               ),
                             );
-                          } else if (snapshot.hasError) {
+                          }
+                          else if (snapshot.hasError) {
                             return Icon(Icons.image_not_supported_sharp);
-                          } else {
+                          }
+                          else {
                             return CircleAvatar(
                               radius: 20,
                               backgroundColor: CustomColors.primaryColor,
@@ -80,12 +82,15 @@ class _UpcomingMatchCardState extends State<UpcomingMatchCard> {
                         },
                       ),
                             ),
-                            Text(
-                              team1.teamAbbreviation,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Colors.white60,
+                            Container(
+                              width: MediaQuery.sizeOf(context).width*0.175,
+                              child: Text(
+                                team1.teamAbbreviation,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white60,
+                                ),
                               ),
                             ),
                           ],
@@ -168,12 +173,15 @@ class _UpcomingMatchCardState extends State<UpcomingMatchCard> {
                         },
                       ),
                             ),
-                            Text(
-                              team2.teamAbbreviation,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Colors.white60,
+                            Container(
+                              width: MediaQuery.sizeOf(context).width*0.175,
+                              child: Text(
+                                team2.teamAbbreviation,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white60,
+                                ),
                               ),
                             ),
                           ],
