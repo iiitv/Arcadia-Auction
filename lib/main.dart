@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
               routes: {
                 AdminMainPage.routeName: (ctx) => AdminMainPage(),
                 AuctionHome.routeName: (ctx) => AuctionHome(),
-                // AuctionPlayer.routeName: (ctx) => AuctionPlayer(),
+                //AuctionPlayer.routeName: (ctx) => AuctionPlayer(),
                 AuctionPlayerResell.routeName: (ctx) => AuctionPlayerResell(),
                 AuctionDetails.routeName: (ctx) => AuctionDetails(),
                 TeamDetails.routeName: (ctx) => TeamDetails(),

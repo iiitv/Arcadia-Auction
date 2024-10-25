@@ -128,6 +128,7 @@ class UpcomingMatchCard extends StatelessWidget {
         );
       },
       child: Container(
+        width: MediaQuery.sizeOf(context).width*0.8,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
@@ -211,12 +212,14 @@ class UpcomingMatchCard extends StatelessWidget {
             ),
             title: Center(
               child: Column(children: [
-                Text(
-                  "Match " + match.matchId,
-                  style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white60),
+                Container(
+                  child: Text(
+                    "Match " + match.matchId,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white60),
+                    textScaler: TextScaler.linear(1.5),
+                  ),
                 ),
                 SizedBox(
                   height: 12,
@@ -224,37 +227,51 @@ class UpcomingMatchCard extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text(
-                      teams
-                          .firstWhere((e) => e.teamUid == match.teamId1)
-                          .teamAbbreviation,
-                      // teams.firstWhere((e) => e.teamUid==match.teamId1).teamAbbreviation[1] +
-                      // teams.firstWhere((e) => e.teamUid==match.teamId1).teamAbbreviation[2],
+                    Container(
+                      width: MediaQuery.sizeOf(context).width*0.175,
+                      alignment: Alignment.center,
+                      child: Text(
+                        teams
+                            .firstWhere((e) => e.teamUid == match.teamId1)
+                            .teamAbbreviation,
+                        // teams.firstWhere((e) => e.teamUid==match.teamId1).teamAbbreviation[1] +
+                        // teams.firstWhere((e) => e.teamUid==match.teamId1).teamAbbreviation[2],
 
-                      // overflow: TextOverflow.visible,
-                      style: TextStyle(
-                          color: Colors.white60,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                        // overflow: TextOverflow.visible,
+                        style: TextStyle(
+                            color: Colors.white60,
+                            fontWeight: FontWeight.bold,
+                            ),
+                        textScaler: TextScaler.linear(1),
+                      ),
                     ),
-                    Text(
-                      "   Vs   ",
-                      style: TextStyle(
-                          color: Colors.white60,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                    Container(
+                      width: MediaQuery.sizeOf(context).width*0.075,
+                      alignment: Alignment.center,
+                      child: Text(
+                        "   Vs   ",
+                        style: TextStyle(
+                            color: Colors.white60,
+                            fontWeight: FontWeight.bold,
+                            ),
+                        textScaler: TextScaler.linear(1),
+                      ),
                     ),
-                    Text(
-                      teams
-                          .firstWhere((e) => e.teamUid == match.teamId2)
-                          .teamAbbreviation,
-                      // teams.firstWhere((e) => e.teamUid==match.teamId2).teamAbbreviation[1] +
-                      // teams.firstWhere((e) => e.teamUid==match.teamId2).teamAbbreviation[2],
-                      overflow: TextOverflow.visible,
-                      style: TextStyle(
-                          color: Colors.white60,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                    Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.sizeOf(context).width*0.175,
+                      child: Text(
+                        teams
+                            .firstWhere((e) => e.teamUid == match.teamId2)
+                            .teamAbbreviation,
+                        // teams.firstWhere((e) => e.teamUid==match.teamId2).teamAbbreviation[1] +
+                        // teams.firstWhere((e) => e.teamUid==match.teamId2).teamAbbreviation[2],
+                        // overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            color: Colors.white60,
+                            fontWeight: FontWeight.bold,
+                            ),textScaler: TextScaler.linear(1),
+                      ),
                     ),
                   ],
                 ),
