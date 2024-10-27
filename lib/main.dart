@@ -22,7 +22,7 @@ import 'screens/admin/auction_resell_player.dart';
 import 'screens/onboarding/onboarding_screen.dart';
 import 'screens/onboarding/signin_screen.dart';
 
-void main() async {
+void main(){
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(
       SystemUiMode.manual, overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
@@ -33,6 +33,7 @@ void main() async {
     DeviceOrientation.portraitDown,
   ]);
   runApp(MyApp());
+
 }
 
 Future<void> _messageHandler(RemoteMessage message) async {
@@ -40,7 +41,8 @@ Future<void> _messageHandler(RemoteMessage message) async {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.     
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -136,10 +138,7 @@ class Init {
       print('Message clicked!');
     });
     if (!Auth.isAuth) {
-      if (Auth.didSignOut) {
-        return 3;
-      }
-      return -1;
+      return Auth.didSignOut ? 3 : -1;
     } else {
       Auth.setUid();
       // DocumentSnapshot<Map<String, dynamic>> documentSnapshot;
@@ -153,7 +152,7 @@ class Init {
         } else {
           return 0;
         }
-      } else if (!documentSnapshot.data()!['isAdmin']) {
+      } else if (!documentSnapshot.data()?['isAdmin']) {
         return 1;
       } else {
         return 2;
@@ -161,3 +160,4 @@ class Init {
     }
   }
 }
+
