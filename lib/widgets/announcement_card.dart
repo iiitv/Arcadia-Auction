@@ -32,17 +32,20 @@ class AnnouncementCard extends StatelessWidget {
               child: Image.asset('assets/arcadia-logo3.png'),
             ),
             Container(
-              width: 220,
+              width: MediaQuery.sizeOf(context).width*0.4,
               child: Text(
                 announcement.title,
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
-            Text(
-              DateFormat(dateFormat).format(announcement.createddateTime),
-              style: TextStyle(color: Colors.white, fontSize: 12),
-              textAlign: TextAlign.start,
+            Container(
+              width: MediaQuery.sizeOf(context).width*0.3,
+              child: Text(
+                DateFormat(dateFormat).format(announcement.createddateTime),
+                style: TextStyle(color: Colors.white, fontSize: 12),
+                textAlign: TextAlign.start,
+              ),
             ),
           ],
         ),
