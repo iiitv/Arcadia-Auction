@@ -35,11 +35,18 @@ jobs:
 
     - name: Run tests
       run: flutter test
-#    - name: Install CocoaPods dependencies
-#      run: |
-#        cd ios
-#        pod repo update
-#        pod install
+
+    - name: Set iOS Deployment Target
+      run: |
+          cd ios
+          echo "platform :ios, '12.0'" >> Podfile  
+
+    - name: Install CocoaPods dependencies
+      run: |
+        cd ios
+        pod repo update
+        pod install
+
 #
 #    - name: Build APK for Android
 #      run: flutter build apk
