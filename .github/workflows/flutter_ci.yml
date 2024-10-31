@@ -13,7 +13,7 @@ on:
 jobs:
   build:
     name: Build and Test
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - name: Check out code
@@ -40,7 +40,7 @@ jobs:
       run: flutter build apk
 
     - name: Build iOS App
-      run: flutter build ios
+      run: flutter build ios --no-codesign
       env:
         CI: true
 
