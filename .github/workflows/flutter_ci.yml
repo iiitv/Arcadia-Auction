@@ -35,14 +35,17 @@ jobs:
 
     - name: Run tests
       run: flutter test
+    - name: Install CocoaPods dependencies
+      run: |
+        cd ios
+        pod repo update
+        pod install
 
     - name: Build APK for Android
       run: flutter build apk
 
     - name: Build iOS App
-      run: flutter build ios --no-codesign
-      env:
-        CI: true
+      run: flutter build ios
 
     - name: Archive and upload Android artifacts
       uses: actions/upload-artifact@v4
