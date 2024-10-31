@@ -36,10 +36,12 @@ jobs:
     - name: Run tests
       run: flutter test
 
-    - name: Set iOS Deployment Target
+    - name: Clean CocoaPods cache
       run: |
-          cd ios
-          echo "platform :ios, '12.0'" >> Podfile  
+        cd ios
+        rm -rf Pods Podfile.lock
+        pod cache clean --all
+        pod install 
 
 
 #
